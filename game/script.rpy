@@ -11,11 +11,12 @@ define barry = Character("Barry",color ="#1a8cd3")
 
 label start:
     #Ominous and sad music playing TBA
-
+    play music "audio/Music/Makai Symphony - Dragon Castle.mp3" fadein 0.5 volume 0.5
     "How did it end up like this?"
     "At some point..."
     "Things just fell apart"
     
+
 
     #TBA
     scene bg eye
@@ -29,8 +30,9 @@ label start:
 
     label background:
         #slowly fade into office, TBA
-
+        stop music fadeout 1.5
         #Crowd noises
+        play sound "audio/Sound/office-ambience-6322.mp3"
         scene bg office
         with Dissolve(1.0)
         you "Breath IN...{w}Breath OUT..."
@@ -64,7 +66,8 @@ label start:
         "For the enviroment!":
             jump cyrusHappy
 
-    label casEnters:    
+    label casEnters: 
+        play music "audio/music/Onycs - Shine.mp3" fadein 0.5 volume 0.5   
         "???" "Ah, yes. Welcome to Big Energy Corp."
         scene bg casnormal
         with dissolve
@@ -117,7 +120,9 @@ label Common:
     #generic office back ground as replacement
     scene bg corridor
     with fade
-    #Casual music TBA
+    #Casual music
+    stop music fadeout 1.0
+    play music "audio/Music/Corporate Motivational (loop).mp3" fadein 1.5 volume 0.5
 
     
     cassandra "Big. Eneregy. Corp. is solely responsible for ensuring new up-and-coming residential districts get electricity."
@@ -139,6 +144,7 @@ label Common:
     scene bg cubicle
     with dissolve
     you "Well, guess I'll..."
+    play sound "audio/Sound/door-knock-47175.mp3"
     "KNOCK KNOCK" with hpunch
     you "Wahhhhhh!!!"
     #energetic music TBA
