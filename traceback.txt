@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 154, in script
-    Barry "Need me to show you the ropes?"
-Exception: Sayer 'Barry' is not defined.
+  File "game/script.rpy", line 102, in script
+    casssandra "..."
+Exception: Sayer 'casssandra' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 154, in script
-    Barry "Need me to show you the ropes?"
+  File "game/script.rpy", line 102, in script
+    casssandra "..."
   File "D:\renpy-8.0.3-sdk\renpy\ast.py", line 881, in execute
     who = eval_who(self.who, self.who_fast)
   File "D:\renpy-8.0.3-sdk\renpy\ast.py", line 774, in eval_who
     raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'Barry' is not defined.
+Exception: Sayer 'casssandra' is not defined.
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090809
 EnviroWorld 1.0
-Thu Mar  9 01:33:52 2023
+Fri Mar 10 14:21:54 2023
