@@ -99,6 +99,7 @@ label cyrusHappy:
 
 #Cassandra is happy scenario 
 label CasHappy:
+    cassandra "..."
     scene bg cassmile
     with dissolve
     cassandra "Well, why wouldn't you be? After all, we do some amazing work here."
@@ -107,6 +108,7 @@ label CasHappy:
 
 #Cassandra is disguted with you scenario
 label CasDisgust:
+    cassandra "..."
     scene bg casdisgust
     with dissolve
     cassandra "Well, then why are you here"
