@@ -10,20 +10,24 @@ define barry = Character("Barry",color ="#1a8cd3")
 # The game starts here.
 
 label start:
+    scene bg bigeye
+    with fade
     #Ominous and sad music playing TBA
     play music "audio/Music/Makai Symphony - Dragon Castle.mp3" fadein 0.5 volume 0.5
     "How did it end up like this?"
+    
+    with dissolve
     "At some point..."
     "Things just fell apart"
     
-
-
-    #TBA
-    scene bg eye
-    with dissolve
+    
     "Where did it all went wrong?"
-    scene bg casDestruction
+    scene bg angel
     with fade
+    "It's too late"
+    "It has begun"
+    "??? is already here"
+    scene bg big
     "I remember"
     "It all begin when..."
     
@@ -120,28 +124,37 @@ label CasDisgust:
 label Common:
     #Casssandra sprite TBA
     #generic office back ground as replacement
-    scene bg corridor
+    show bg corridor
     with fade
     #Casual music
     stop music fadeout 1.0
     play music "audio/Music/Corporate Motivational (loop).mp3" fadein 1.5 volume 0.5
 
-    
+    show cassandra satisfied
+    with dissolve
     cassandra "Big. Eneregy. Corp. is solely responsible for ensuring new up-and-coming residential districts get electricity."
     cassandra "And with you as out Chief energy coordinator, you get the priviledge of determining where that energy comes from."
     cassandra "I was in your shoes a long time ago, and I made very cost-efficient choices and look at me now!"
     you "hehehehe...Oh yeah?"
     cassandra "If I have one piece of advice to give you"
     cassandra "It's to..."
+    show cassandra shout
     cassandra "{b}SAVE{w=1.0} MONEY!!!{w}{/b}"
     cassandra "Money makes the world go round, wouldn't be here without it"
-    
+    show cassandra norm
     cassandra "Anyway, here's your cubicle."
     scene bg youcubicle
     with dissolve
+    show cassandra satisfied
+    with dissolve
     cassandra "The Harminee project should be coming your way in the next few hours. I expect great things!"
     #foot steps sounds TBA
-
+    show cassandra norm
+    with None
+    pause(1.0)
+    hide cassandra norm
+    with dissolve
+    pause(0.85)
     you "(Oh boy)"
     scene bg cubicle
     with dissolve
